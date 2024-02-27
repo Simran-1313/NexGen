@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+
 import Section from "@/components/Section";
 import Layout from "@/components/Layout";
+import HomePageContainer from "@/containers/homePageContainer";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
+
         <title>Welcome to Our Website</title>
         <meta
           name="description"
@@ -20,8 +25,15 @@ export default function Home() {
       </Head>
       <main className={`${inter.className} h-full`}>
         <Layout className="px-14 pt-0 pb-8">
+        <HomePageContainer />
           <Section />
+          
         </Layout>
+
+        
+     
+        
+
       </main>
     </>
   );
