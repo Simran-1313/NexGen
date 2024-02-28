@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { DataContext } from '@/context/DataContext';
 import SoloBoxData from './sections/SoloBoxData';
-
+import 'tailwindcss/tailwind.css';
 function HomePageContainer() {
 
     const { PageData, data } = useContext(DataContext);
@@ -10,7 +10,7 @@ function HomePageContainer() {
         PageData();
     }, [])
 
-    console.log(data);
+    
     return (
         <>
             {
@@ -18,6 +18,7 @@ function HomePageContainer() {
                     return <SoloBoxData
                         item={item}
                         index={index}
+                       
                     />
                 })
             }

@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import Section from "@/components/Section";
 import Layout from "@/components/Layout";
 import HomePageContainer from "@/containers/homePageContainer";
+import Relateddeals from "@/components/Relateddeals";
 
 
 
@@ -25,7 +26,8 @@ export default function Home() {
       </Head>
       <main className={`${inter.className} h-full`}>
         <Layout className="px-14 pt-0 pb-8">
-        <HomePageContainer />
+        <HomePageContainer className="border-solid border-black border-5 " />
+        <Relateddeals/>
           <Section />
           
         </Layout>
