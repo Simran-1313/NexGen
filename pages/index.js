@@ -27,8 +27,8 @@ export default function Home() {
       <main className={`${inter.className} h-full`}>
         <Layout className="px-14 pt-0 pb-8">
         <HomePageContainer className="border-solid border-black border-5 " />
-        <Relateddeals/>
-          <Section />
+     
+        
           
         </Layout>
 

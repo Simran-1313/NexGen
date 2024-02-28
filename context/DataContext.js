@@ -17,11 +17,11 @@ const PageData = () => {
       "rating": {
         "number": "9.8",
         "title": "Exceptional",
-        "rating_image": "../../../public/data-img/rating1"
+        "rating_image": '/public/data-img/rating1.png'
       },
       "tag": "true",
       "tag_data": {
-        "tag_img": "../../../public/data-img/tag1.png",
+        "tag_img": "/public/data-img/tag1.png",
         "tag_text": "Best choice"
       }
     },
@@ -33,11 +33,11 @@ const PageData = () => {
       "rating": {
         "number": "9.5",
         "title": "Excellent",
-        "rating-image": "../../../public/data-img/rating2"
+        "rating-image": "/public/data-img/rating2"
       },
       "tag": "true",
       "tag_data": {
-        "tag_img": "../../../public/data-img/tag2.png",
+        "tag_img": "/public/data-img/tag2.png",
         "tag_text": "Best value"
       }
     },
@@ -49,11 +49,11 @@ const PageData = () => {
       "rating": {
         "number": "9.3",
         "title": "Exceptional",
-        "rating_image": "../../../public/data-img/rating1"
+        "rating_image": "/public/data-img/rating1"
       },
       "tag": "false",
       "tag_data": {
-        "tag_img": "../../../public/data-img/tag2.png",
+        "tag_img": "/public/data-img/tag2.png",
         "tag_text": "Best value"
       }
     }
