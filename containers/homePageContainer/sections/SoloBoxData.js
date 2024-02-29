@@ -8,6 +8,7 @@ import Link from "next/link";
 import pcImage from "@/public/data-img/pc.png";
 function SoloBoxData({ item }) {
 
+    //  const [imgUrl , setImgUrl ] = useState(Rating1);
 
   return (
     <>
