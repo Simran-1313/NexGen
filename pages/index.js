@@ -2,10 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
-import Section from "@/components/Section";
 import Layout from "@/components/Layout";
 import HomePageContainer from "@/containers/homePageContainer";
-import Relateddeals from "@/components/Relateddeals";
 
 
 
@@ -25,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${inter.className} h-full`}>
-        <Layout className="px-14 pt-0 pb-8">
+        <Layout className="px-64 pt-0 pb-8 sm:px-5 md:px-10 lg:px-20  ">
         <HomePageContainer className="border-solid border-black border-5 " />
      
         

@@ -3,7 +3,7 @@ import React from 'react'
 const Section = () => {
   return (
     <>
-    <div className='flex justify-center w-[70%] mx-auto '>
+    <div className='flex justify-center w-[80%] mx-auto '>
         <div className='w-[50%] m-20 box-border'>
             <p className='text-[#5C6874]  text-4xl '>
             Sign up and get exclusive special deals
