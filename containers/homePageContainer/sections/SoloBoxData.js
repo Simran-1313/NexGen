@@ -75,7 +75,7 @@ function SoloBoxData({ item }) {
                
                 </div>
                 <div className="pt-4">
-                    {item.id}
+                    <span className="border-solid border-black/70 border-[1px] py-[0.6rem] px-[1rem] rounded-full">{item.id}</span>
                 </div>
           </div>
 
