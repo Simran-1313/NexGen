@@ -31,7 +31,7 @@ function HomePageContainer() {
     
     return (
         <>
-        <div className='w-[100vw]  ' >
+        <div className=' overflow-hidden ' >
             <div>
               <h2 className='text-5xl mt-10 my-4 text-black/80 sm:text-xl md:text-3xl lg:text-3xl ' >
               Best Website builders in the US
@@ -41,12 +41,12 @@ function HomePageContainer() {
         <div className='flex w-[100vw] my-4 '>
            <div className='justify-start' >
            <div className=' flex ' >
-            <div className='flex items-center '><Image className='h-5 w-5 my-1 mx-2 sm:mx-1 ' src={tick}/><p className='sm:text-xs sm:w-[7rem]' >Last Updated - February 22,2020</p></div>
-            <div className='flex items-center ml-5 sm:ml-0 '><Image className='h-5 w-5 my-1 mx-2 sm:mx-1 ' src={info}/><p className='sm:text-xs sm:w-[4rem]' >Advertising Disclosure</p></div>
+            <div className='flex items-center '><Image className='h-5 w-5 my-1 mx-2 sm:mx-1   ' src={tick}/><p className='sm:text-xs sm:w-[7rem] lg:w-[16rem] ' >Last Updated - February 22,2020</p></div>
+            <div className='flex items-center ml-5 lg:ml-2 sm:ml-0 '><Image className='h-5 w-5 my-1 mx-2 sm:mx-1 ' src={info}/><p className='sm:text-xs sm:w-[4rem] lg:w-[12rem] ' >Advertising Disclosure</p></div>
            </div>
            
            </div>
-           <div className= ' bg-white flex xl:pl-[48rem] sm:pl-3 sm:text-xs ' >
+           <div className= ' bg-white flex lg:pl-0  sm:pl-3 sm:text-xs ' >
           
           <select className=' bg-white ' value={selectedOption} onChange={handleOptionChange}>
            
@@ -64,22 +64,22 @@ function HomePageContainer() {
         <hr/>
         <nav className='w-[100vw]' >
             <ol className='flex' >
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mr-6 lg:mr-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' > Tools</Link>
                 </li>
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' >AWS Builder </Link>
                 </li>
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' >Start Builder </Link>
                 </li>
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' >Build Supplies </Link>
                 </li>
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' >Tooling </Link>
                 </li>
-                <li className='mx-6 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
                 <Link href='/' >BlueHosting </Link>
                 </li>
             </ol>

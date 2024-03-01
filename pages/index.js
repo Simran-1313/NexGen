@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${inter.className} h-full`}>
-        <Layout className="px-64 pt-0 pb-8 sm:px-5 md:px-10 lg:px-20  ">
+        <Layout className="px-64 pt-0 pb-8 sm:px-5 md:px-10 lg:px-20 xl:px-24  ">
         <HomePageContainer className="border-solid border-black border-5 " />
      
         

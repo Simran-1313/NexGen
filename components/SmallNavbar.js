@@ -38,7 +38,7 @@ function Smallnavbar() {
             animate={{ scale: 1, opacity: 1 }}
             className='min-w-[100vw] flex flex-col z-30 justify-between  fixed top-[30%] left-1/2 
       bg-black/60 rounded-lg backdrop-blur-md py-0 shadow-lg' >
-            <nav className='py-8 px-6 text-left'>
+            <nav className='py-8 px-6 lg:text-center sm:text-left w-[100%] mx-auto flex-col justify-center '>
             <div className='my-8' >
         <Link href='/' className="text-white/90  text-xl"  >Categories</Link>
     </div>
