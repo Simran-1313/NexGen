@@ -11,17 +11,19 @@ import Link from 'next/link';
 import arrow from "@/public/data-img/Vector.png"
 function HomePageContainer() {
 
+    // Get the PageData and data from the DataContext
     const { PageData, data } = useContext(DataContext);
 
     useEffect(() => {
         PageData();
     }, [])
+    // Initialize state for selectedOption
     const [selectedOption, setSelectedOption] = useState('')
 
     const handleOptionChange = (event) => {
       setSelectedOption(event.target.value)
     }
-  
+  // Define an array of options for the select component
     const options = [
         { value: 'null', label: 'Top Relevent' },
       { value: 'India', label: 'India' },
@@ -62,25 +64,25 @@ function HomePageContainer() {
         </div>
         
         <hr/>
-        <nav className='w-[100vw]' >
-            <ol className='flex' >
-                <li className='mr-6 lg:mr-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' > Tools</Link>
+        <nav className='w-[100%]' >
+            <ol className='flex   overflow-scroll' >
+                <li className='mr-6 lg:mr-4 my-4 text-black/70 sm:text-xs sm:mr-2 ' >
+                <Link href='/' className='w-4' > Tools</Link>
                 </li>
-                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' >AWS Builder </Link>
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs ' >
+                <Link href='/' className='w-4' >AWS Builder </Link>
                 </li>
-                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' >Start Builder </Link>
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs ' >
+                <Link href='/' className='w-4' >Start Builder </Link>
                 </li>
-                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' >Build Supplies </Link>
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs ' >
+                <Link href='/' className='w-4' >Build Supplies </Link>
                 </li>
-                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' >Tooling </Link>
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs ' >
+                <Link href='/' className='w-4' >Tooling </Link>
                 </li>
-                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs sm:mx-2 ' >
-                <Link href='/' >BlueHosting </Link>
+                <li className='mx-6 lg:mx-4 my-4 text-black/70 sm:text-xs ' >
+                <Link href='/' className='w-6' >BlueHosting </Link>
                 </li>
             </ol>
         </nav>
