@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Smallnavbar from "@/components/SmallNavbar";
 import DataContextProvider from "@/context/DataContext";
 import "@/styles/globals.css";
-import {Analytics} from "@vercel/analytics"
+import { Analytics } from '@vercel/analytics';
 
 // Define the main App component
 export default function App({ Component, pageProps }) {
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
      {/* Wrap the Component and its children in the DataContextProvider component */}
      <DataContextProvider>
        <Component {...pageProps} />
-       <Analytics/>
+       
      </DataContextProvider>
 
      {/* Render the Footer component after the children */}
