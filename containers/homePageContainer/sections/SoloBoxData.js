@@ -185,6 +185,7 @@ function SoloBoxData({ item }) {
            </div>
           </div>
         </div>
+        
       </main>
     </>
   );
