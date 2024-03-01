@@ -1,46 +1,51 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Smallnavbar from "@/components/SmallNavbar";
 import DataContextProvider from "@/context/DataContext";
 import "@/styles/globals.css";
 
+// Define the main App component
 export default function App({ Component, pageProps }) {
-  const [isDesktop, setIsDesktop] = useState(false);
+ // Initialize the state variable 'isDesktop' with a value of 'false'
+ const [isDesktop, setIsDesktop] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsDesktop(window.innerWidth > 900);
-        };
+ // Set up the 'useEffect' hook to handle window resize events
+ useEffect(() => {
+   // Define a function to handle window resize events
+   const handleResize = () => {
+     // Set 'isDesktop' based on the current window width
+     setIsDesktop(window.innerWidth > 900);
+   };
 
-        // Initial check on mount
-        handleResize();
+   // Call the handleResize function initially to set the initial state
+   handleResize();
 
-        // Add event listener for window resize
-        window.addEventListener('resize', handleResize);
+   // Add an event listener to handle window resize events
+   window.addEventListener('resize', handleResize);
 
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-  return (
-    <>{
-      isDesktop?(
-        <Navbar />
-      ):(
-        <Smallnavbar/>
-      )
-    }
-    
-    
-    <DataContextProvider>
-      
-        <Component {...pageProps} />
-        
-      </DataContextProvider>
-<Footer/>
+   // Clean up the event listener when the component is unmounted
+   return () => {
+     window.removeEventListener('resize', handleResize);
+   };
+ }, []); // Empty dependency array ensures the effect runs only once, similar to componentDidMount
 
-    </>
-  );
+ // Render the appropriate navigation bar based on the 'isDesktop' value
+ return (
+   <>
+     {
+       isDesktop // If the screen width is greater than 900 pixels, render the Navbar component
+         ? <Navbar />
+         : <Smallnavbar /> // Otherwise, render the Smallnavbar component
+     }
+
+     {/* Wrap the Component and its children in the DataContextProvider component */}
+     <DataContextProvider>
+       <Component {...pageProps} />
+     </DataContextProvider>
+
+     {/* Render the Footer component after the children */}
+     <Footer />
+   </>
+ );
 }

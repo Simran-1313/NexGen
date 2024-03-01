@@ -83,7 +83,7 @@ function SoloBoxData({ item }) {
             <div className="flex items-center justify-center" >
               <Image className="w-141 h-103 sm:w-[50vw] " src={pcImage} />
             </div>
-            <div className=" ml-8 mt-4 sm:w-[100%] sm:flex sm:justify-center sm:ml-0" >
+            <div className="  mt-4 ml-[6rem] sm:w-[100%] sm:flex sm:justify-center sm:ml-0" >
             {item.image_text}
             </div>
           </div>
