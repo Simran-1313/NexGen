@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-   <div className=' w-full px-[5rem]  h-[4rem] bg-[#212731] flex justify-center  items-center   ;
+   <div className=' w-[100%] px-[5rem]  h-[4rem] bg-[#212731] flex justify-center  items-center   ;
    '>
      <div className="relative  m-8">
       <input
