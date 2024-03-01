@@ -42,7 +42,7 @@ const Deals = ({
                         </h2>
                     </div>
                 </div>
-                <button className=" h-[3rem] sm:w-[18rem]  lg:max-w-[25rem] lg:flex lg:justify-center lg:items-center lg:mx-auto text-white w-full bg-blue-700 rounded-lg " >
+                <button className=" h-[3rem] sm:w-[18rem] hover:scale-[1.05] lg:max-w-[25rem] lg:flex lg:justify-center lg:items-center lg:mx-auto text-white w-full bg-[#1B88F4] rounded-lg " >
                     <h2 className="w-full " >
                         <Link href="" className="justify-center mr-10 ">ViewDeal</Link>
                     </h2>

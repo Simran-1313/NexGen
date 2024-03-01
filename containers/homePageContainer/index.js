@@ -46,7 +46,7 @@ function HomePageContainer() {
            </div>
            
            </div>
-           <div className= ' bg-white flex lg:pl-0  sm:pl-3 sm:text-xs ' >
+           <div className= ' bg-white flex lg:pl-32  pl-[30%] sm:pl-3 sm:text-xs ' >
           
           <select className=' bg-white ' value={selectedOption} onChange={handleOptionChange}>
            

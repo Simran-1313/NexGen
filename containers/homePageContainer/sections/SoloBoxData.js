@@ -17,7 +17,7 @@ function SoloBoxData({ item }) {
 
   useEffect(() => {
       const handleResize = () => {
-          setIsDesktop(window.innerWidth > 900);
+          setIsDesktop(window.innerWidth > 1000);
       };
 
       // Initial check on mount
@@ -37,7 +37,7 @@ function SoloBoxData({ item }) {
   return (
     <>
       <main className="w-full my-10 mt-10 ">
-        <div className="flex flex-row sm:flex-col w-[100%] h-[250px] sm:h-auto">
+        <div className="flex flex-row sm:flex-col w-[100%] h-auto sm:h-auto">
           <div>
           <div className="flex-col " >
                 <div
@@ -81,7 +81,7 @@ function SoloBoxData({ item }) {
 
           <div className="flex flex-col mt-2  ml-12 sm:ml-2  w-[250px] sm:w-[100%] h-[100%]">
             <div className="flex items-center justify-center" >
-              <Image className="w-141 h-103 " src={pcImage} />
+              <Image className="w-141 h-103 sm:w-[50vw] " src={pcImage} />
             </div>
             <div className=" ml-8 mt-4 sm:w-[100%] sm:flex sm:justify-center sm:ml-0" >
             {item.image_text}
@@ -93,12 +93,12 @@ function SoloBoxData({ item }) {
             
             {
       isDesktop?(
-        <div className="p-2 text-[#4B5665] text-lg "> <span className="font-bold " >{item.title}</span>{item.description}</div>
+        <div className="p-2   text-[#4B5665] text-lg "> <span className="font-bold " >{item.title}</span>{item.description}</div>
       ):(
         <Disclosure as="div" className="mt-2" >
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-base font-bold  text-black/80 hover:bg-black/60 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-base font-bold  text-black/80 hover:scale-1.2 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
                 <span>{item.title}</span>
                 <ChevronUpIcon
                   className={`${
@@ -137,7 +137,7 @@ function SoloBoxData({ item }) {
             <Disclosure as="div" className="mt-2" >
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-base font-bold  text-black/80 hover:bg-black/60 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-base font-bold  text-black/80 hover:scale-1.2 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
                 <span>Main Highlights</span>
                 <ChevronUpIcon
                   className={`${
@@ -164,11 +164,11 @@ function SoloBoxData({ item }) {
         </Disclosure> 
         )
       }
-            <div className="font-bold text-blue-400 sm:w-[100%] sm:flex sm:justify-center">Show more</div>
+            <div className="font-bold text-[#1B88F4] sm:w-[100%] sm:flex sm:justify-center">Show more</div>
           </div>
 
           <div className="flex flex-col   items-center p-2 w-[300px] sm:w-[100%] ">
-            <div className="flex-col p-2 bg-blue-300/30 w-[8rem] h-[7rem] items-center rounded-md  rounded-t-none  " >
+            <div className="flex-col p-2 bg-[#F3F9FF] w-[8rem] h-[7rem] items-center rounded-md  rounded-t-none  " >
             <div className="flex justify-center text-4xl " > {item.rating.number}</div>
             <div className="flex justify-center  "> {item.rating.title}</div>
             <div className="flex justify-center  ">
@@ -177,7 +177,7 @@ function SoloBoxData({ item }) {
            
             </div>
             <div className=" mt-[5rem] w-[90%] sm:mt-4  ">
-           <button className=" h-[3rem]  text-white w-full bg-blue-700 rounded-lg " >
+           <button className=" h-[3rem]  text-white w-full hover:scale-[1.05] bg-[#1B88F4] rounded-lg " >
                     <h2 className="w-full " >
                         <Link href="/" className=" flex items-center justify-center  ">View</Link>
                     </h2>
